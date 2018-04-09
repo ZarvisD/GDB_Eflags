@@ -8,7 +8,7 @@ class SimpleCommand(gdb.Command):
     def invoke(self, arg, from_tty):
         # When we call "simple_command" from gdb, this is the method
         # that will be called.
-        print("Hello from simple_command!")
+        # print("Hello from simple_command!")
         eflags=['CF','PF','AF','ZF','SF','TF','IF','DF','OF','IOPL','NT','RF','VM','AC','VIF','VIP','ID'] #List of all the flags to the best of my knowledge
         s_flag=['CF','PF','AF','ZF','SF','OF'] # List of all the status FLAGS
         status_flag={'CF':0x0001,
